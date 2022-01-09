@@ -232,13 +232,13 @@
 #import "DisplayBrightnessAction.h"
 #import "DisplaySleepTimeAction.h"
 #import "FirewallRuleAction.h"
+//#import "ITunesPlaylistAction.h"
 //#import "IChatAction.h"
-#import "ITunesPlaylistAction.h"
 #import "LockKeychainAction.h"
 #import "MailIMAPServerAction.h"
 #import "MailSMTPServerAction.h"
 #import "MailIntervalAction.h"
-#import "MessagesAction.h"
+//#import "MessagesAction.h"
 #import "MountAction.h"
 #import "MuteAction.h"
 #import "NetworkLocationAction.h"
@@ -298,13 +298,11 @@
 			   [DesktopBackgroundAction class],
 			   [DisplayBrightnessAction class],
                [DisplaySleepTimeAction class],
-			   [ITunesPlaylistAction class],
 			   [LockKeychainAction class],
 			   [MailIMAPServerAction class],
 			   [MailSMTPServerAction class],
 			   [MailIntervalAction class],
-               [MessagesAction class],
-			   [MountAction class],
+               [MountAction class],
 			   [MuteAction class],
 			   [NetworkLocationAction class],
 			   [OpenAction class],

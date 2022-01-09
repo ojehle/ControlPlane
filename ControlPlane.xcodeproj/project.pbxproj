@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FF57998278B60C400A0BD48 /* LightEvidenceSource.h in Sources */ = {isa = PBXBuildFile; fileRef = 8D91F1F70C4772FF00D9FC0F /* LightEvidenceSource.h */; };
 		5DCCE0BB1CA4870100FACF9F /* ScrollBarsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCCE0BA1CA4870100FACF9F /* ScrollBarsAction.m */; };
 		640E7DC01C1C983400045672 /* ScreenLockEvidenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 640E7DBF1C1C983400045672 /* ScreenLockEvidenceSource.m */; };
 		732A58DF1484300A0011019C /* ShellScriptEvidenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 732A58DE1484300A0011019C /* ShellScriptEvidenceSource.m */; };
@@ -142,7 +143,6 @@
 		DA9957EA160D4BA300AB3C7A /* StressTestEvidenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9957E9160D4BA300AB3C7A /* StressTestEvidenceSource.m */; };
 		DAA26B1517AB696100C585CF /* HostAvailability.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA26B0E17AB653000C585CF /* HostAvailability.xib */; };
 		DAA9ABFF1595FDE700B84B05 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAA9ABFE1595FDE700B84B05 /* README.md */; };
-		DAA9AC1B15961CDF00B84B05 /* MessagesAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA9AC1A15961CDF00B84B05 /* MessagesAction.m */; };
 		DAAA7FAB1953DE0500C06DBB /* PreventSystemSleepAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAA7FA91953DE0500C06DBB /* PreventSystemSleepAction.m */; };
 		DAAA7FAE1953E2C500C06DBB /* MountedVolumeEvidenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAA7FAD1953E2C500C06DBB /* MountedVolumeEvidenceSource.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DAAF16B61413174400F5D915 /* ToggleTimeMachineAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAF16B51413174400F5D915 /* ToggleTimeMachineAction.m */; };
@@ -189,7 +189,6 @@
 		DDAEFFFB1414714F00FDADE8 /* Action+HelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFFFA1414714F00FDADE8 /* Action+HelperTool.m */; };
 		DDC3C2A21412A82000655F34 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = DDC3C2A11412A82000655F34 /* Growl Registration Ticket.growlRegDict */; };
 		DDDF1C2B1411D49300DB0018 /* DefaultBrowserAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF1C2A1411D49300DB0018 /* DefaultBrowserAction.m */; };
-		DDDF1C2F1411E08000DB0018 /* ITunesPlaylistAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF1C2E1411E07F00DB0018 /* ITunesPlaylistAction.m */; };
 		DDE1B068140438DB006564A6 /* ControlPlane.sdef in Resources */ = {isa = PBXBuildFile; fileRef = DDE1B067140438DB006564A6 /* ControlPlane.sdef */; };
 		DDF4E595141588E80028DF4A /* CoreLocationMap.html in Resources */ = {isa = PBXBuildFile; fileRef = DDF4E594141588E80028DF4A /* CoreLocationMap.html */; };
 		DDFF423114156B0A0047D311 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = DDFF423014156B0A0047D311 /* location.png */; };
@@ -575,8 +574,6 @@
 		DA9957E9160D4BA300AB3C7A /* StressTestEvidenceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StressTestEvidenceSource.m; path = Source/StressTestEvidenceSource.m; sourceTree = "<group>"; };
 		DAA26B0D17AB653000C585CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HostAvailability.xib; sourceTree = "<group>"; };
 		DAA9ABFE1595FDE700B84B05 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		DAA9AC1915961CDF00B84B05 /* MessagesAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagesAction.h; path = Source/MessagesAction.h; sourceTree = "<group>"; };
-		DAA9AC1A15961CDF00B84B05 /* MessagesAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagesAction.m; path = Source/MessagesAction.m; sourceTree = "<group>"; };
 		DAAA7FA91953DE0500C06DBB /* PreventSystemSleepAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreventSystemSleepAction.m; path = Source/PreventSystemSleepAction.m; sourceTree = "<group>"; };
 		DAAA7FAA1953DE0500C06DBB /* PreventSystemSleepAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreventSystemSleepAction.h; path = Source/PreventSystemSleepAction.h; sourceTree = "<group>"; };
 		DAAA7FAC1953E2C500C06DBB /* MountedVolumeEvidenceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MountedVolumeEvidenceSource.h; path = Source/MountedVolumeEvidenceSource.h; sourceTree = "<group>"; };
@@ -679,8 +676,6 @@
 		DDC3C2A11412A82000655F34 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Growl Registration Ticket.growlRegDict"; path = "Resources/Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		DDDF1C291411D49300DB0018 /* DefaultBrowserAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultBrowserAction.h; path = Source/DefaultBrowserAction.h; sourceTree = "<group>"; };
 		DDDF1C2A1411D49300DB0018 /* DefaultBrowserAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultBrowserAction.m; path = Source/DefaultBrowserAction.m; sourceTree = "<group>"; };
-		DDDF1C2D1411E07F00DB0018 /* ITunesPlaylistAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITunesPlaylistAction.h; path = Source/ITunesPlaylistAction.h; sourceTree = "<group>"; };
-		DDDF1C2E1411E07F00DB0018 /* ITunesPlaylistAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITunesPlaylistAction.m; path = Source/ITunesPlaylistAction.m; sourceTree = "<group>"; };
 		DDE1B067140438DB006564A6 /* ControlPlane.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ControlPlane.sdef; path = Resources/ControlPlane.sdef; sourceTree = "<group>"; };
 		DDF4E594141588E80028DF4A /* CoreLocationMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = CoreLocationMap.html; path = Resources/CoreLocationMap.html; sourceTree = "<group>"; };
 		DDFF423014156B0A0047D311 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = Resources/location.png; sourceTree = "<group>"; };
@@ -1114,16 +1109,12 @@
 			children = (
 				DDDF1C291411D49300DB0018 /* DefaultBrowserAction.h */,
 				DDDF1C2A1411D49300DB0018 /* DefaultBrowserAction.m */,
-				DDDF1C2D1411E07F00DB0018 /* ITunesPlaylistAction.h */,
-				DDDF1C2E1411E07F00DB0018 /* ITunesPlaylistAction.m */,
 				8DB1EF210C6C60A300586F84 /* MailIMAPServerAction.h */,
 				8DB1EF220C6C60A300586F84 /* MailIMAPServerAction.m */,
 				DD8274EE141154780098FA6E /* MailIntervalAction.h */,
 				DD8274EF141154780098FA6E /* MailIntervalAction.m */,
 				8DD790C10BC28C4E00705346 /* MailSMTPServerAction.h */,
 				8DD790C20BC28C4E00705346 /* MailSMTPServerAction.m */,
-				DAA9AC1915961CDF00B84B05 /* MessagesAction.h */,
-				DAA9AC1A15961CDF00B84B05 /* MessagesAction.m */,
 				8DD790AA0BC28A9F00705346 /* OpenAction.h */,
 				8DD790AB0BC28A9F00705346 /* OpenAction.m */,
 				DABE3F6816C44236004F5E63 /* OpenAndHideAction.h */,
@@ -1307,8 +1298,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
 						DevelopmentTeam = YV4RHGCYFA;
@@ -1482,15 +1472,13 @@
 			);
 			inputPaths = (
 				"com.apple.mail:Mail",
-				"com.apple.iTunes:iTunes",
-				"com.apple.iChat:Messages",
 			);
 			name = "Generate Script Bridge Headers";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nmkdir -p $DERIVED_FILES_DIR\nfor (( i=0; i < $SCRIPT_INPUT_FILE_COUNT; i++ )); do\n    \n    appFile=\"$(eval echo \\$SCRIPT_INPUT_FILE_$i | cut -d ':' -f 2)\"\n    bundleid=\"$(eval echo \\$SCRIPT_INPUT_FILE_$i | cut -d ':' -f 1)\"\n\n\n    sdef \"/Applications/$appFile.app\" | sdp -fh -o \"$DERIVED_FILES_DIR\" --basename ${appFile} --bundleid ${bundleid}\ndone";
+			shellScript = "\nmkdir -p $DERIVED_FILES_DIR\nfor (( i=0; i < $SCRIPT_INPUT_FILE_COUNT; i++ )); do\n    \n    appFile=\"$(eval echo \\$SCRIPT_INPUT_FILE_$i | cut -d ':' -f 2)\"\n    bundleid=\"$(eval echo \\$SCRIPT_INPUT_FILE_$i | cut -d ':' -f 1)\"\n\n\n    sdef \"/System/Applications/$appFile.app\" | sdp -fh -o \"$DERIVED_FILES_DIR\" --basename ${appFile} --bundleid ${bundleid}\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1499,6 +1487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF57998278B60C400A0BD48 /* LightEvidenceSource.h in Sources */,
 				DAF2257E15ABD8CD003A8030 /* DisplayBrightnessAction.m in Sources */,
 				DAE893EE1454FFFB005FA13C /* ToggleFirewallAction.m in Sources */,
 				DAF36ECA143E7C5700350991 /* CoreLocationSource.m in Sources */,
@@ -1562,7 +1551,6 @@
 				DAAA7FAB1953DE0500C06DBB /* PreventSystemSleepAction.m in Sources */,
 				DD8274FE14117C590098FA6E /* SpeakAction.m in Sources */,
 				DDDF1C2B1411D49300DB0018 /* DefaultBrowserAction.m in Sources */,
-				DDDF1C2F1411E08000DB0018 /* ITunesPlaylistAction.m in Sources */,
 				DA5B01F31412BAEC00E19C50 /* BetterAuthorizationSampleLib.c in Sources */,
 				DAAF16B61413174400F5D915 /* ToggleTimeMachineAction.m in Sources */,
 				DDAEFFFB1414714F00FDADE8 /* Action+HelperTool.m in Sources */,
@@ -1583,7 +1571,6 @@
 				DA2B4385152161D900E94A1D /* ToggleFTPAction.m in Sources */,
 				DAC672FE152235E800F1C7A1 /* ToggleWebSharingAction.m in Sources */,
 				DA8E283F156BCAD50040FC35 /* ToggleRemoteLoginAction.m in Sources */,
-				DAA9AC1B15961CDF00B84B05 /* MessagesAction.m in Sources */,
 				DAB1A7E215C3776D00CF65E8 /* CPNotifications.m in Sources */,
 				DADFF79715D96CBC00DEF412 /* ToggleNotificationCenterAlertsAction.m in Sources */,
 				DA7EAF4715D9F7F2008DF67C /* ActiveApplicationEvidenceSource.m in Sources */,
@@ -1841,11 +1828,13 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -1855,7 +1844,7 @@
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinrue.${PRODUCT_NAME:rfc1034identifier}";
@@ -1867,11 +1856,13 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -1882,7 +1873,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinrue.${PRODUCT_NAME:rfc1034identifier}";
@@ -1897,12 +1888,21 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1964,12 +1964,21 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2027,7 +2036,9 @@
 		DA5B01DF1412B6A700E19C50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinrue.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -2037,7 +2048,9 @@
 		DA5B01E01412B6A700E19C50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinrue.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -2047,9 +2060,10 @@
 		DA5B02031412BB1800E19C50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = "CPHelperTool-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -2068,9 +2082,10 @@
 		DA5B02041412BB1800E19C50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = "CPHelperTool-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
