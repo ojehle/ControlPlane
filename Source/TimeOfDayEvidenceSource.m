@@ -189,12 +189,11 @@
 #endif
         return NO;
     }
-
-    NSCalendarDate *now = [NSCalendarDate calendarDate];
     
-	// Check day first
-	NSInteger dow = [now dayOfWeek];	// 0=Sunday, 1=Monday, etc.
-	if ([day isEqualToString:@"Any day"]) {
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *comps = [cal components:NSCalendarUnitWeekday fromDate:[NSDate date]];
+    NSInteger dow = [comps weekday];
+   	if ([day isEqualToString:@"Any day"]) {
 		// Okay
 	} else if ([day isEqualToString:@"Weekday"]) {
 		if ((dow < 1) || (dow > 5))
@@ -208,12 +207,13 @@
 		if (![day isEqualToString:day_name[dow]])
 			return NO;
 	}
-    
-	NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *now = [NSDate date];
 	NSDateComponents *startC = [cal components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:startT];
 	NSDateComponents *endC = [cal components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:endT];
-    
-    const NSInteger hourNow = [now hourOfDay], minuteNow = [now minuteOfHour];
+    NSDateComponents *nowC = [cal components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:now];
+                       
+    const NSInteger hourNow = [nowC hour];
+    const NSInteger minuteNow = [nowC minute];
     BOOL hasStarted = (hourNow > [startC hour]) || ( (hourNow == [startC hour]) && (minuteNow >= [startC minute]) );
     BOOL hasEnded   = (hourNow > [endC hour])   || ( (hourNow == [endC hour])   && (minuteNow >= [endC minute]) );
     
