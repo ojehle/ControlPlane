@@ -735,7 +735,7 @@ static NSSet *sharedActiveContexts = nil;
     }
     
     @try {
-        [sbItem setImage:image];
+        [sbItem.button setImage:image];
     }
     @catch (NSException *exception) {
         DSLog(@"failed to set the menubar icon to %@ with error %@. Please alert ControlPlane Developers!",
@@ -751,7 +751,7 @@ static NSSet *sharedActiveContexts = nil;
 	}
 
 	sbItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
-	[sbItem setHighlightMode:YES];
+	[sbItem.button.cell setHighlightsBy:YES];
 
     [self updateMenuBarImage];
 
@@ -846,7 +846,7 @@ static NSSet *sharedActiveContexts = nil;
         
 		item = [[item copy] autorelease];
 		[item setTitle:[NSString stringWithFormat:@"%@ (*)", [item title]]];
-		[item setKeyEquivalentModifierMask:NSAlternateKeyMask];
+		[item setKeyEquivalentModifierMask:NSEventModifierFlagOption];
 		[item setAlternate:YES];
 		[item setAction:@selector(forceSwitchAndToggleSticky:)];
 		[submenu addItem:item];
