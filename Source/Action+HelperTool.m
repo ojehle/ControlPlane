@@ -21,6 +21,7 @@
 #import <Security/SecStaticCode.h>
 #import <Security/SecCodeHost.h>
 #import <Security/SecRequirement.h>
+#import <stdatomic.h>
 
 @interface Action (HelperTool_Private)
 
@@ -44,7 +45,7 @@ BOOL blessHelperWithLabel(NSString* label, NSError** error);
 }
 
 - (BOOL) helperToolPerformAction: (NSString *) action withParameter: (id) parameter {
-	static int32_t versionCheck = 0;
+	static atomic_int versionCheck = 0;
 	
 	helperToolResponse = NULL;
 	AuthorizationRef auth = NULL;
@@ -55,12 +56,11 @@ BOOL blessHelperWithLabel(NSString* label, NSError** error);
 	
 	if (!versionCheck) {
 		// start version check
-		OSAtomicIncrement32(&versionCheck);
-		
+		atomic_fetch_add_explicit(&versionCheck, 1, memory_order_relaxed);
 		// get version of helper tool
 		error = [self helperToolActualPerform: @kCPHelperToolGetVersionCommand withParameter:nil response: &helperToolResponse auth: auth];
 		if (error) {
-			OSAtomicDecrement32(&versionCheck);
+            atomic_fetch_sub_explicit(&versionCheck, 1, memory_order_relaxed);
 			return NO;
 		}
 		
@@ -71,7 +71,7 @@ BOOL blessHelperWithLabel(NSString* label, NSError** error);
 			//[self helperToolFix: kBASFailNeedsUpdate withAuth: auth];
 		
 		// finish version check
-		OSAtomicIncrement32(&versionCheck);
+        atomic_fetch_add_explicit(&versionCheck, 1, memory_order_relaxed);
 	}
 	
 	//  wait until version check is done
