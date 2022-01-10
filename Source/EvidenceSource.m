@@ -219,13 +219,13 @@
 
 - (IBAction)closeSheetWithOK:(id)sender
 {
-	[NSApp endSheet:panel returnCode:NSOKButton];
+	[NSApp endSheet:panel returnCode:NSModalResponseOK];
 	[panel orderOut:nil];
 }
 
 - (IBAction)closeSheetWithCancel:(id)sender
 {
-	[NSApp endSheet:panel returnCode:NSCancelButton];
+	[NSApp endSheet:panel returnCode:NSModalResponseCancel];
 	[panel orderOut:nil];
 }
 
@@ -234,7 +234,7 @@
 {
     NSInvocation *inv = (NSInvocation *) contextInfo;
 
-	if (returnCode == NSOKButton) {
+	if (returnCode == NSModalResponseOK) {
         NSDictionary *dict = [self readFromPanel];
         [inv setArgument:&dict atIndex:2];
         [inv invoke];

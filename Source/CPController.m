@@ -821,7 +821,7 @@ static NSSet *sharedActiveContexts = nil;
         NSString *rep = [item representedObject];
         if (rep && [contextsDataSource contextByUUID:rep]) {
             BOOL ticked = ([rep isEqualToString:self.currentContext.uuid]);
-            [item setState:(ticked ? NSOnState : NSOffState)];
+            [item setState:(ticked ? NSControlStateValueOn : NSControlStateValueOff)];
         }
     }
 }
@@ -1383,7 +1383,7 @@ static NSSet *sharedActiveContexts = nil;
 
 	// Selecting any context in the force-context menu deselects the 'stick forced contexts' item,
 	// so we force it to be correct here.
-	int state = forcedContextIsSticky ? NSOnState : NSOffState;
+	int state = forcedContextIsSticky ? NSControlStateValueOn : NSControlStateValueOff;
     [self.stickForcedContextMenuItem setState:state];
 
     [self increaseActionsInProgress];
@@ -1414,7 +1414,7 @@ static NSSet *sharedActiveContexts = nil;
 	BOOL oldValue = forcedContextIsSticky;
 	forcedContextIsSticky = !oldValue;
 
-  	[sender setState:(forcedContextIsSticky ? NSOnState : NSOffState)];
+  	[sender setState:(forcedContextIsSticky ? NSControlStateValueOn : NSControlStateValueOff)];
 
     if (!forcedContextIsSticky) {
         [self setForceOneFullUpdate:YES];

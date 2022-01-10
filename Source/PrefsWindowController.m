@@ -336,7 +336,7 @@ static NSString * const sizeParamPrefix = @"NSView Size Preferences/";
 		NSSize size  = [prefsWindow frame].size;
         if ((size.width > minSize.width) || (size.height > minSize.height)) {
             size.height -= [self toolbarHeight] + [self titleBarHeight];
-            NSData *persistedSize = [NSArchiver archivedDataWithRootObject:[NSValue valueWithSize:size]];
+            NSData *persistedSize = [NSKeyedArchiver archivedDataWithRootObject:[NSValue valueWithSize:size]];
             [[NSUserDefaults standardUserDefaults] setObject:persistedSize forKey:sizeParamName];
         } else {
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:sizeParamName];
@@ -351,7 +351,7 @@ static NSString * const sizeParamPrefix = @"NSView Size Preferences/";
         return nil;
     }
 
-    return (NSValue *) [NSUnarchiver unarchiveObjectWithData:persistedSize];
+    return (NSValue *) [NSKeyedUnarchiver unarchiveObjectWithData:persistedSize];
 }
 
 - (void)onPrefsWindowClose:(NSNotification *)notification {
@@ -704,7 +704,7 @@ static NSString * const sizeParamPrefix = @"NSView Size Preferences/";
 		NSOpenPanel *panel = [NSOpenPanel openPanel];
 		[panel setAllowsMultipleSelection:NO];
 		[panel setCanChooseDirectories:NO];
-		if ([panel runModal] != NSOKButton)
+		if ([panel runModal] != NSModalResponseOK)
 			return;
 		NSString *filename = [[panel URL] path];
 		Action *action = [[klass alloc] initWithFile:filename];
