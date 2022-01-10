@@ -62,7 +62,7 @@ static ToolTip *sharedToolTip = nil;
 	NSRect textFieldFrame = { { 0, 0 }, { 100, 20 } };
     
 	window = [[NSWindow alloc] initWithContentRect:contentRect
-                                         styleMask:NSBorderlessWindowMask
+                                         styleMask:NSWindowStyleMaskBorderless
                                            backing:NSBackingStoreBuffered
                                              defer:YES];
     
@@ -80,7 +80,7 @@ static ToolTip *sharedToolTip = nil;
 	[textField setBezeled:NO];
 	[textField setBordered:NO];
 	[textField setDrawsBackground:NO];
-	[textField setAlignment:NSCenterTextAlignment];
+	[textField setAlignment:NSTextAlignmentCenter];
 	[textField setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 	[textField setFont:[NSFont toolTipsFontOfSize:[NSFont systemFontSize]]];
 	[[window contentView] addSubview:textField];

@@ -25,8 +25,18 @@
 {
     
     NSError *error = nil;
-    CWInterface *wif = [CWInterface interface];
-    BOOL setPowerSuccess = [wif setPower:turnOn ? YES : NO error:&error];
+    
+    CWWiFiClient *wfc = CWWiFiClient.sharedWiFiClient;
+    //NSLog(@"client: %@\n", wfc);
+    if ( !wfc ) {
+        return 1;
+    }
+
+    CWInterface *wif = wfc.interface; // get default interface
+    if (!wif) {
+        return 1;
+    }
+     BOOL setPowerSuccess = [wif setPower:turnOn ? YES : NO error:&error];
     if (! setPowerSuccess)
     {
         if (turnOn)

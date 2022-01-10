@@ -71,7 +71,7 @@ static void linkDataChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, voi
 }
 
 + (BOOL) isEvidenceSourceApplicableToSystem {
-    return ([[CWInterface interfaceNames] count] > 0);
+    return ([[ CWWiFiClient interfaceNames] count ] > 0);
 }
 
 - (void)start {
@@ -369,7 +369,8 @@ static void linkDataChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, voi
 }
 
 - (BOOL) getWiFiInterface {
-    NSArray *supportedInterfaces = [[CWInterface interfaceNames] allObjects];
+    
+    NSArray *supportedInterfaces = [ CWWiFiClient interfaceNames];
     
     // get a list of supported Wi-Fi interfaces.  It is unlikely, but still possible,
     // for there to be more than one interface, yet this assumes there is just one
@@ -379,15 +380,7 @@ static void linkDataChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, voi
                                 @"The Mac does not have a Wifi/AirPort card or it has failed"));
         self.currentInterface = nil;
         return NO;
-    }
-
-    self.currentInterface = [CWInterface interfaceWithName:supportedInterfaces[0]];
-    self.interfaceBSDName = [self.currentInterface interfaceName];
-
-#ifdef DEBUG_MODE
-    DSLog(@"currentInterface %@\nBSD name %@", self.currentInterface, self.interfaceBSDName);
-#endif
-    
+    }    
     return YES;
 }
 

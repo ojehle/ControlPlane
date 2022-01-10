@@ -231,7 +231,7 @@ static NSSet *sharedActiveContexts = nil;
             [tintedImage setTemplate:NO];
             [tintedImage lockFocus];
             [[color colorUsingColorSpaceName:NSCalibratedRGBColorSpace] set];
-            NSRectFillUsingOperation((NSRect) {NSZeroPoint, tintedImage.size}, NSCompositeSourceIn);
+            NSRectFillUsingOperation((NSRect) {NSZeroPoint, tintedImage.size}, NSCompositingOperationSourceIn);
             [tintedImage unlockFocus];
             return tintedImage;
         }
@@ -447,7 +447,7 @@ static NSSet *sharedActiveContexts = nil;
 
 - (void)importVersion1SettingsFinish: (BOOL)rulesImported withActions: (BOOL)actionsImported andIPActions: (BOOL)ipActionsFound {
 	NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-	[alert setAlertStyle:NSInformationalAlertStyle];
+	[alert setAlertStyle:NSAlertStyleInformational];
 	if (!rulesImported && !actionsImported)
 		[alert setMessageText:NSLocalizedString(@"Quick Start", @"")];
 	else
@@ -673,14 +673,14 @@ static NSSet *sharedActiveContexts = nil;
 		return;
     }
 	if (!title) {
-		[sbItem setTitle:nil];
+        sbItem.button.title = @"";
 		return;
 	}
 
 	// Smaller font
 	NSDictionary *attrs = @{ NSFontAttributeName: [NSFont menuBarFontOfSize:0] };
 	NSAttributedString *as = [[NSAttributedString alloc] initWithString:title attributes:attrs];
-	[sbItem setAttributedTitle:as];
+    sbItem.button.attributedTitle = as;
     [as release];
 }
 

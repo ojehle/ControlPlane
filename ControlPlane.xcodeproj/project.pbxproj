@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2FF57998278B60C400A0BD48 /* LightEvidenceSource.h in Sources */ = {isa = PBXBuildFile; fileRef = 8D91F1F70C4772FF00D9FC0F /* LightEvidenceSource.h */; };
+		2FF7F9A2278C554A0035C5D9 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF7F99F278C554A0035C5D9 /* UniformTypeIdentifiers.framework */; platformFilter = maccatalyst; };
 		5DCCE0BB1CA4870100FACF9F /* ScrollBarsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCCE0BA1CA4870100FACF9F /* ScrollBarsAction.m */; };
 		640E7DC01C1C983400045672 /* ScreenLockEvidenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 640E7DBF1C1C983400045672 /* ScreenLockEvidenceSource.m */; };
 		732A58DF1484300A0011019C /* ShellScriptEvidenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 732A58DE1484300A0011019C /* ShellScriptEvidenceSource.m */; };
@@ -307,6 +308,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2FF7F99F278C554A0035C5D9 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* ControlPlane_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlPlane_Prefix.pch; path = Source/ControlPlane_Prefix.pch; sourceTree = "<group>"; };
 		5DCCE0B91CA4870100FACF9F /* ScrollBarsAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollBarsAction.h; path = Source/ScrollBarsAction.h; sourceTree = "<group>"; };
 		5DCCE0BA1CA4870100FACF9F /* ScrollBarsAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollBarsAction.m; path = Source/ScrollBarsAction.m; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 				DA8E2833156B498A0040FC35 /* ApplicationServices.framework in Frameworks */,
 				8D8C9BAB0BBB3ADB0074D5B3 /* Apple80211.framework in Frameworks */,
 				DD06E811140C661700059764 /* AudioToolbox.framework in Frameworks */,
+				2FF7F9A2278C554A0035C5D9 /* UniformTypeIdentifiers.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				8D57B1440C4457AB00EC620D /* CoreAudio.framework in Frameworks */,
 				DD6FCC691413EF6B0095E64F /* CoreLocation.framework in Frameworks */,
@@ -880,6 +883,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF7F99F278C554A0035C5D9 /* UniformTypeIdentifiers.framework */,
 				DACCA09F1DD7A309007F7373 /* HockeySDK.framework */,
 				DA7EAF5E19F2EB4600DF6F54 /* QuartzCore.framework */,
 				DA7EAF5A19F2EB2800DF6F54 /* CoreGraphics.framework */,

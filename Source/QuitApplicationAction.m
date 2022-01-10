@@ -55,7 +55,7 @@
 - (BOOL)execute:(NSString **)errorString
 {
 	// get bundle identifier
-	NSString *path = [[NSWorkspace sharedWorkspace] fullPathForApplication:application];
+    NSString *path = [[NSWorkspace sharedWorkspace] fullPathForApplication:application];
 	NSString *identifier = [[NSBundle bundleWithPath:path] bundleIdentifier];
 	
 	// terminate

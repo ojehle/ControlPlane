@@ -534,7 +534,7 @@ static NSString *MovedRowsType = @"MOVED_ROWS_TYPE";
 	if ([[self childrenOfContext:[ctxt uuid]] count] > 0) {
 		// Warn about destroying child contexts
 		NSAlert *alert = [[NSAlert alloc] init];
-		[alert setAlertStyle:NSWarningAlertStyle];
+		[alert setAlertStyle:NSAlertStyleWarning];
 		[alert setMessageText:NSLocalizedString(@"Removing this context will also remove its child contexts!", "")];
 		[alert setInformativeText:NSLocalizedString(@"This action is not undoable!", @"")];
 		[alert addButtonWithTitle:NSLocalizedString(@"OK", @"")];

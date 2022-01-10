@@ -45,7 +45,7 @@ static void onPMrootDomainChange(void *refcon, io_service_t service, uint32_t me
 + (LaptopLidStateType)isLidClosed {
     LaptopLidStateType isClosed = LaptopLidStateIsUnavailable;
 
-    io_registry_entry_t rootDomain = IORegistryEntryFromPath(kIOMasterPortDefault,
+    io_registry_entry_t rootDomain = IORegistryEntryFromPath(kIOMainPortDefault,
                                                              kIOPowerPlane ":/IOPowerConnection/IOPMrootDomain");
 
     if (rootDomain != MACH_PORT_NULL) {
