@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment version="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -830,7 +829,7 @@ IA
                                             </binding>
                                         </connections>
                                     </tableColumn>
-                                    <tableColumn identifier="delay" width="112.916015625" minWidth="10" maxWidth="1000" id="1012">
+                                    <tableColumn identifier="delay" width="83.916015625" minWidth="10" maxWidth="1000" id="1012">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Délai">
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -1154,7 +1153,7 @@ DQ
                                         </buttonCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                     </tableColumn>
-                                    <tableColumn identifier="name" editable="NO" width="283.09912109375" minWidth="33.15283203125" maxWidth="1000" id="1548">
+                                    <tableColumn identifier="name" editable="NO" width="254.09912109375" minWidth="33.15283203125" maxWidth="1000" id="1548">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Nom">
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
@@ -1343,7 +1342,7 @@ Gw
                                         </textFieldCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                     </tableColumn>
-                                    <tableColumn identifier="confidence" editable="NO" width="68.92529296875" minWidth="10" maxWidth="1000" id="1811">
+                                    <tableColumn identifier="confidence" editable="NO" width="39.92529296875" minWidth="10" maxWidth="1000" id="1811">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Confidence">
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
